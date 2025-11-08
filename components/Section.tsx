@@ -23,15 +23,18 @@ export default function Section({ title, children, dark = true }: SectionProps) 
       variants={sectionReveal}
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-80"
+        className="pointer-events-none absolute inset-0 opacity-60"
         aria-hidden
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.14),transparent_45%)]" />
-        <div className="absolute inset-0 mix-blend-screen" style={{
-          background: dark
-            ? "linear-gradient(120deg, rgba(255,0,106,0.12) 0%, rgba(0,240,255,0.08) 40%, rgba(255,255,255,0.06) 100%)"
-            : "linear-gradient(120deg, rgba(17,24,39,0.2) 0%, rgba(79,70,229,0.15) 40%, rgba(17,24,39,0.1) 100%)",
-        }} />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.09),transparent_50%)]" />
+        <div
+          className="absolute inset-0 mix-blend-screen"
+          style={{
+            background: dark
+              ? "linear-gradient(130deg, rgba(255,0,106,0.08) 0%, rgba(0,240,255,0.06) 45%, rgba(255,255,255,0.04) 100%)"
+              : "linear-gradient(130deg, rgba(17,24,39,0.16) 0%, rgba(79,70,229,0.12) 45%, rgba(17,24,39,0.08) 100%)",
+          }}
+        />
       </div>
       <motion.div
         className="relative z-10 max-w-5xl text-center"
@@ -39,7 +42,7 @@ export default function Section({ title, children, dark = true }: SectionProps) 
       >
         <div className="overflow-hidden">
           <motion.h2
-            className="font-black uppercase tracking-[0.16em] text-[clamp(3.75rem,10vw,9rem)] leading-[0.9] drop-shadow-[0_28px_55px_rgba(0,0,0,0.45)]"
+            className="font-black uppercase tracking-[0.14em] text-[clamp(3.5rem,9vw,8rem)] leading-[0.95] drop-shadow-[0_18px_38px_rgba(0,0,0,0.45)]"
             variants={maskReveal}
           >
             <GlitchText>{title}</GlitchText>
@@ -47,7 +50,7 @@ export default function Section({ title, children, dark = true }: SectionProps) 
         </div>
         {children ? (
           <motion.div
-            className={`mx-auto mt-12 max-w-3xl text-sm font-semibold uppercase tracking-[0.38em] sm:text-base sm:tracking-[0.42em] md:text-lg md:tracking-[0.5em] ${
+            className={`mx-auto mt-10 max-w-3xl text-xs font-semibold uppercase tracking-[0.32em] sm:text-sm sm:tracking-[0.36em] md:text-base md:tracking-[0.42em] ${
               dark ? "text-white/75" : "text-black/70"
             }`}
             variants={fadeUp}

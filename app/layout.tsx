@@ -10,12 +10,15 @@ const bodyFont = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
+  fallback: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
 });
 
 const glitchFont = Rubik_Glitch({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-glitch",
+  display: "swap",
+  fallback: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
 });
 
 export default function RootLayout({
