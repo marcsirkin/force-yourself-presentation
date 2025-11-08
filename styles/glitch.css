@@ -1,0 +1,111 @@
+.glitch {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-family: var(--font-glitch), var(--font-body), "Inter", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 400;
+  text-shadow: 0 0 14px rgba(255, 255, 255, 0.34), 0 0 36px rgba(255, 0, 106, 0.2125),
+    0 0 48px rgba(0, 240, 255, 0.17);
+  filter: drop-shadow(0 16px 38px rgba(0, 0, 0, 0.5));
+  animation: glitch-bloom 1s ease-out forwards;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-glitch);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  opacity: 0.55;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  text-shadow: inherit;
+}
+
+.glitch::before {
+  color: #ff006a;
+  clip-path: inset(0 0 52% 0);
+  transform: translate3d(-4px, -2px, 0) skewX(4deg);
+  animation: glitch-before 0.48s steps(2, end) 0.05s, glitch-fade 0.48s ease-out 0.05s;
+}
+
+.glitch::after {
+  color: #00f0ff;
+  clip-path: inset(48% 0 0 0);
+  transform: translate3d(4px, 2px, 0) skewX(-4deg);
+  animation: glitch-after 0.48s steps(2, end) 0.12s, glitch-fade 0.48s ease-out 0.12s;
+  filter: drop-shadow(0 0 18px rgba(0, 240, 255, 0.255));
+}
+
+@keyframes glitch-bloom {
+  0% {
+    filter: drop-shadow(0 24px 56px rgba(0, 0, 0, 0.55));
+    opacity: 0.5;
+    letter-spacing: 0.2em;
+  }
+  100% {
+    filter: drop-shadow(0 16px 38px rgba(0, 0, 0, 0.5));
+    opacity: 1;
+    letter-spacing: 0.16em;
+  }
+}
+
+@keyframes glitch-before {
+  0% {
+    transform: translate3d(-6px, -4px, 0) skewX(8deg);
+    opacity: 0.7;
+  }
+  55% {
+    transform: translate3d(3px, -1px, 0) skewX(-2deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) skewX(0deg);
+    opacity: 0;
+  }
+}
+
+@keyframes glitch-after {
+  0% {
+    transform: translate3d(6px, 4px, 0) skewX(-8deg);
+    opacity: 0.7;
+  }
+  55% {
+    transform: translate3d(-3px, 1px, 0) skewX(2deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) skewX(0deg);
+    opacity: 0;
+  }
+}
+
+@keyframes glitch-fade {
+  0% {
+    filter: blur(0px) brightness(1.2);
+  }
+  100% {
+    filter: blur(0px) brightness(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch,
+  .glitch::before,
+  .glitch::after {
+    animation: none;
+    transform: none;
+    opacity: 1;
+    clip-path: none;
+  }
+
+  .glitch::before,
+  .glitch::after {
+    opacity: 0;
+  }
+}
+
