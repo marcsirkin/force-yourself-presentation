@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode } from "react";
+import { ReactNode, forwardRef } from "react";
 import { motion } from "framer-motion";
 import GlitchText from "./GlitchText";
 import { fadeUp, maskReveal, sectionReveal, staggerChildren } from "@/lib/animations";
@@ -9,11 +9,16 @@ interface SectionProps {
   title: string;
   children?: ReactNode;
   dark?: boolean;
+  index?: number;
 }
 
-export default function Section({ title, children, dark = true }: SectionProps) {
+const Section = forwardRef<HTMLElement, SectionProps>(function Section(
+  { title, children, dark = true, index }: SectionProps,
+  ref,
+) {
   return (
     <motion.section
+      ref={ref}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.55 }}
@@ -21,6 +26,7 @@ export default function Section({ title, children, dark = true }: SectionProps) 
         dark ? "bg-black text-white" : "bg-white text-black"
       }`}
       variants={sectionReveal}
+      data-slide-index={typeof index === "number" ? index : undefined}
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden>
         <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(0,0,0,0)_58%,rgba(0,0,0,0.14)_100%)]" />
@@ -34,10 +40,7 @@ export default function Section({ title, children, dark = true }: SectionProps) 
           }}
         />
       </div>
-      <motion.div
-        className="relative z-10 max-w-5xl text-center"
-        variants={staggerChildren}
-      >
+      <motion.div className="relative z-10 max-w-5xl text-center" variants={staggerChildren}>
         <div className="overflow-hidden">
           <motion.h2
             className="font-black uppercase tracking-[0.14em] text-[clamp(3.5rem,9vw,8rem)] leading-[0.95] drop-shadow-[0_16px_32px_rgba(0,0,0,0.38)]"
@@ -59,4 +62,6 @@ export default function Section({ title, children, dark = true }: SectionProps) 
       </motion.div>
     </motion.section>
   );
-}
+});
+
+export default Section;
