@@ -17,9 +17,37 @@ body {
 body {
   font-family: var(--font-body), "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: #000;
+  pointer-events: none;
+  z-index: 50;
+  animation: presentation-intro 0.45s ease-out forwards;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@keyframes presentation-intro {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    opacity: 0;
+  }
 }
