@@ -37,6 +37,7 @@ Because the file is a `.tsx` module you can use JSX for richer formatting. For e
 ```
 
 Any anchors inherit presentation-friendly styling automatically, so you only need to supply the URL.
+The default slides live in [`lib/slides.ts`](./lib/slides.ts). Update the `demoSlides` array or add new entries there—each object maps directly to a rendered `Section`.
 
 ## GitHub Workflow
 

@@ -102,6 +102,18 @@ export default function Presentation({ slides }: PresentationProps) {
           </Section>
         );
       })}
+      {slides.map(({ title, body }, index) => (
+        <Section
+          key={`${index}-${title}`}
+          title={title}
+          index={index}
+          ref={(element) => {
+            sectionRefs.current[index] = element;
+          }}
+        >
+          {body ? <p>{body}</p> : null}
+        </Section>
+      ))}
       {slides.length > 1 ? (
         <NextArrow onClick={handleAdvance} disabled={isLastSlide} label={nextLabel} />
       ) : null}
