@@ -4,6 +4,19 @@ import "./globals.css";
 import "../styles/glitch.css";
 import Lenis from "@studio-freight/lenis";
 import { ReactNode, useEffect } from "react";
+import { Space_Grotesk, Rubik_Glitch } from "next/font/google";
+
+const bodyFont = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const glitchFont = Rubik_Glitch({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-glitch",
+});
 
 export default function RootLayout({
   children,
@@ -33,8 +46,10 @@ export default function RootLayout({
   }, []);
 
   return (
-    <html lang="en">
-      <body className="bg-black text-white antialiased overflow-x-hidden selection:bg-white selection:text-black">
+    <html lang="en" className={`${bodyFont.variable} ${glitchFont.variable}`}>
+      <body
+        className={`${bodyFont.className} bg-black text-white antialiased overflow-x-hidden selection:bg-white selection:text-black`}
+      >
         {children}
       </body>
     </html>

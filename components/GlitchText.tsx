@@ -1,7 +1,13 @@
 "use client";
 
-import { PropsWithChildren } from "react";
+interface GlitchTextProps {
+  children: string;
+}
 
-export default function GlitchText({ children }: PropsWithChildren) {
-  return <span className="glitch" data-glitch={children}>{children}</span>;
+export default function GlitchText({ children }: GlitchTextProps) {
+  return (
+    <span className="glitch" data-glitch={children}>
+      {children}
+    </span>
+  );
 }
