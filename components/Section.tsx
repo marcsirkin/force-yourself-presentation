@@ -53,6 +53,10 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
           <motion.div
             className={`mx-auto mt-10 max-w-3xl text-xs font-semibold uppercase tracking-[0.26em] sm:text-sm sm:tracking-[0.3em] md:text-base md:tracking-[0.34em] ${
               dark ? "text-white/75" : "text-black/70"
+            } [&_a]:underline [&_a]:underline-offset-[0.45em] [&_a]:decoration-2 [&_a]:transition-colors ${
+              dark
+                ? "[&_a]:text-white [&_a]:decoration-white/50 [&_a:hover]:decoration-white [&_a:hover]:text-white"
+                : "[&_a]:text-black [&_a]:decoration-black/50 [&_a:hover]:decoration-black [&_a:hover]:text-black"
             }`}
             variants={fadeUp}
           >

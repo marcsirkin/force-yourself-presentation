@@ -16,6 +16,27 @@ This project is a scrollytelling presentation built with Next.js, Tailwind CSS, 
 
 ### Editing Slide Content
 
+The default slides live in [`lib/slides.tsx`](./lib/slides.tsx). Update the `demoSlides` array or add new entries there—each object maps directly to a rendered `Section`.
+
+Because the file is a `.tsx` module you can use JSX for richer formatting. For example, to add a hyperlink:
+
+```tsx
+{
+  title: "Resources",
+  body: (
+    <p>
+      Dive deeper in the
+      {" "}
+      <a href="https://example.com" target="_blank" rel="noreferrer">
+        full case study
+      </a>
+      .
+    </p>
+  ),
+}
+```
+
+Any anchors inherit presentation-friendly styling automatically, so you only need to supply the URL.
 The default slides live in [`lib/slides.ts`](./lib/slides.ts). Update the `demoSlides` array or add new entries there—each object maps directly to a rendered `Section`.
 
 ## GitHub Workflow

@@ -85,6 +85,23 @@ export default function Presentation({ slides }: PresentationProps) {
 
   return (
     <main className="relative bg-black">
+      {slides.map(({ title, body }, index) => {
+        const content =
+          typeof body === "string" || typeof body === "number" ? <p>{body}</p> : body ?? null;
+
+        return (
+          <Section
+            key={`${index}-${title}`}
+            title={title}
+            index={index}
+            ref={(element) => {
+              sectionRefs.current[index] = element;
+            }}
+          >
+            {content}
+          </Section>
+        );
+      })}
       {slides.map(({ title, body }, index) => (
         <Section
           key={`${index}-${title}`}
