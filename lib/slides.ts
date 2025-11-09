@@ -82,6 +82,15 @@ export const demoSlides: Slide[] = [
     },
     hideTitle: true,
   },
+
+  {
+  title: "MY PERSONAL EXPERIMENT FACTORY",
+  body: {
+    type: "html",
+    html: "Five custom GPTs. Each built in 2-4 hours. Each running in production.",
+  },
+},
+  
   {
     title: "Image Interlude",
     media: {
@@ -101,6 +110,14 @@ export const demoSlides: Slide[] = [
       html: "Watch what happens when you see it in action.",
     },
   },
+
+  {
+  title: "START HERE",
+  body: {
+    type: "html",
+    html: "Build these once. Use them everywhere.<br><br><strong>1. ICP Definition</strong> – Who you serve, what they need<br><strong>2. Company Description</strong> – Your positioning, voice, offers<br><strong>3. Process Docs</strong> – How you do the thing, with examples",
+  },
+},
 
       // Slide 11: Secret sauce image (teaser, no explanation yet)
   {
