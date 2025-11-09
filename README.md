@@ -48,6 +48,139 @@ Each one follows the **SPOT → BUILD → TEST → SCALE** loop demonstrated in 
 - **[Marc on LinkedIn](https://www.linkedin.com/in/marcsirkin/)** – Connect for speaking, workshops, and collaboration
 - **[Scott Brinker's Martech Map](https://chiefmartec.com/2025/05/2025-marketing-technology-landscape-supergraphic-100x-growth-since-2011-but-now-with-ai/)** – The landscape graphic used in Slide 3. Scott's devotion to tiny logos is legendary. I even made a Sora2 video about it: https://sora.chatgpt.com/p/s_68e1631c7ec08191ab71e25c85b9876e
 
+## Start here: creating critical markdown files
+
+# AI Foundation Files  
+A simple, structured set of markdown templates designed to make your GPTs, Gems, and Skills produce smarter, more consistent work.
+
+This package contains three core files that should be attached to every custom GPT or used as grounding:  
+1. ICP_DEFINITION.md  
+2. COMPANY_DESCRIPTION.md  
+3. PROCESS_LIBRARY.md  
+
+Use these as templates and update them to represent your business.
+
+---
+
+# 1. ICP_DEFINITION.md
+
+## Audience Overview
+Who you serve in plain language.
+
+## Jobs To Be Done
+What they’re trying to accomplish.
+
+## Pains & Frictions
+Where they struggle.  
+What slows them down.  
+What they complain about.
+
+## Buying Triggers
+What causes them to look for solutions now.
+
+## Objections
+Why they hesitate or say “not now.”
+
+## Decision Making
+How they buy.  
+Who else is involved.  
+What criteria matter most.
+
+## Language They Use
+Important words, phrases, and concepts they care about.
+
+## Value Map
+What they consider a “win” or “good outcome.”
+
+---
+
+# 2. COMPANY_DESCRIPTION.md
+
+## Mission
+Why your business exists.
+
+## Positioning Statement
+Who you serve, what you offer, and why it’s valuable.
+
+## Services / Offers
+List each core offer with a short description.
+
+## What You Are Not
+Helpful for preventing incorrect assumptions.
+
+## Voice & Tone
+How you communicate.  
+Provide examples if possible.
+
+## Messaging Pillars
+3–5 core themes you want reflected in all output.
+
+## Differentiators
+What makes you meaningfully different.
+
+## Credibility Indicators
+Experience, results, frameworks, logos (described in text), etc.
+
+## Writing Examples
+Paste 2–3 examples of your real writing to anchor style.
+
+---
+
+# 3. PROCESS_LIBRARY.md
+
+## Frameworks
+List frameworks you use with steps.  
+Example:
+- Framework Name  
+  - Step 1  
+  - Step 2  
+  - Step 3  
+
+## Templates
+Structures for outputs such as:
+- content briefs  
+- outreach emails  
+- reports  
+- project setups  
+- checklists
+
+## Step-by-Step Processes
+Document how you actually do your work.  
+For example:
+- How you onboard new clients  
+- How you run analysis  
+- How you write copy  
+- How you build a strategy
+
+## Rules of Thumb
+Your “always” / “never” list.
+
+## Example Outputs
+Paste anonymized examples of your work.  
+This dramatically improves output quality.
+
+## Quality Rubric
+Define what “good” looks like.  
+Define what “bad” looks like.
+
+---
+
+# How To Use These Files
+1. Fill these templates in with your own details.  
+2. Attach them to your custom GPT (or equivalent tool).  
+3. Reference them inside your instructions:  
+   “Use the attached ICP, Company Description, and Process Library files when producing any output.”
+
+This instantly improves:
+- accuracy  
+- tone alignment  
+- ICP relevance  
+- repeatable consistency  
+- speed  
+- quality  
+
+These are your AI foundation files — the fastest way to build an AI Factory.
+
 ---
 
 ## Technical Details: Local Development
