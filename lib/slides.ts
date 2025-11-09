@@ -28,10 +28,6 @@ export const demoSlides: Slide[] = [
     body: "Former CEO, Third Door Media (MarTech, Search Engine Land) Founder, Marc Sirkin Consulting",
   },
   {
-    title: "OMG, It Works",
-    body: "Use this section to highlight your first reveal. Duplicate items in <code>demoSlides</code> for more slides, or <a href=\"https://nextjs.org/learn\" target=\"_blank\" rel=\"noreferrer\">link out to supporting material</a> when you need to.",
-  },
-  {
     title: "Image Interlude",
     media: {
       kind: "image",
@@ -39,6 +35,10 @@ export const demoSlides: Slide[] = [
       alt: "Scott Brinkers 2025 Marketing Map",
     },
     hideTitle: true,
+  },
+  {
+    title: "STOP USING 2015 PLAYBOOKS",
+    body: "The funnel is a Choose Your Own Adventure book now.",
   },
   {
     title: "Cinematic Break",
