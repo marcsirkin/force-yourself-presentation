@@ -48,7 +48,7 @@ Each one follows the **SPOT → BUILD → TEST → SCALE** loop demonstrated in 
 - **[Marc on LinkedIn](https://www.linkedin.com/in/marcsirkin/)** – Connect for speaking, workshops, and collaboration
 - **[Scott Brinker's Martech Map](https://chiefmartec.com/2025/05/2025-marketing-technology-landscape-supergraphic-100x-growth-since-2011-but-now-with-ai/)** – The landscape graphic used in Slide 3. Scott's devotion to tiny logos is legendary. I even made a Sora2 video about it: https://sora.chatgpt.com/p/s_68e1631c7ec08191ab71e25c85b9876e
 
-## Start here: creating critical markdown files
+---
 
 # AI Foundation Files  
 A simple, structured set of markdown templates designed to make your GPTs, Gems, and Skills produce smarter, more consistent work.
