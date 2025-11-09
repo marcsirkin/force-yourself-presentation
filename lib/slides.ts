@@ -160,6 +160,16 @@ export const demoSlides: Slide[] = [
     },
     hideTitle: true,
   },
+
+     {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/secretsauce.png",
+      alt: "Factory sauce",
+    },
+    hideTitle: true,
+  },
    
    {
     title: "PLAYBOOKS END",
