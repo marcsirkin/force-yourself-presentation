@@ -30,8 +30,11 @@ export const demoSlides: Slide[] = [
     },
   },
   {
-    title: "Welcome to the Thing",
-    body: "Introduce the big idea here. Everything below is just plain text you can edit.",
+    title: "MARC SIRKIN ",
+    body: {
+      type: "text",
+      text: "Former CEO, Third Door Media (MarTech, Search Engine Land) Founder, Marc Sirkin Consulting",
+    },
   },
   {
     title: "OMG, It Works",
