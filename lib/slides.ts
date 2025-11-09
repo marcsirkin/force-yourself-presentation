@@ -23,17 +23,17 @@ export type Slide = {
 
 export const demoSlides: Slide[] = [
   {
-    title: "Hello, World",
+    title: "FORCE YOURSELF",
     body: {
       type: "text",
-      text: "This is your opening slide. Tweak the text to set the tone of your story.",
+      text: "Force yourself to experiment because your playbook is broken.",
     },
   },
   {
-    title: "Welcome to the Thing",
+    title: "MARC SIRKIN ",
     body: {
       type: "text",
-      text: "Introduce the big idea here. Everything below is just plain text you can edit.",
+      text: "Former CEO, Third Door Media (MarTech, Search Engine Land) Founder, Marc Sirkin Consulting",
     },
   },
   {
