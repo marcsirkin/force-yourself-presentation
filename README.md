@@ -2,7 +2,7 @@
 
 This project is a scrollytelling presentation built with Next.js, Tailwind CSS, Lenis, and Framer Motion. It was built the weekend of November 8/9 using ChatGPT Codex and Claude as an example of both vibe coding and vibe marketing.
 
-Live presentation site: https://force-yourself-presentation-84h8136rx-marc-sirkins-projects.vercel.app/
+Live presentation site: https://force-yourself-presentation-git-main-marc-sirkins-projects.vercel.app/
 
 ## Custom GPTs (AI Factory floor)
 1. Copyline Crafter v2 https://chatgpt.com/g/g-xjqgObyMk-copyline-crafter-v2
