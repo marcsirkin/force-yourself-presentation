@@ -70,7 +70,7 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "/images/1-copyline-.jpg",
+      src: "/images/1-copyline.jpg",
       alt: "Copyline Crafter 01",
     },
     hideTitle: true,
@@ -79,7 +79,7 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "/images/2-copyline-.jpg",
+      src: "/images/2-copyline.jpg",
       alt: "Copyline Crafter 02",
     },
     hideTitle: true,
@@ -88,7 +88,7 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "/images/3-copyline-.jpg",
+      src: "/images/3-copyline.jpg",
       alt: "Copyline Crafter 03",
     },
     hideTitle: true,
@@ -97,7 +97,7 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "/images/4-copyline-.jpg",
+      src: "/images/4-copyline.jpg",
       alt: "Copyline Crafter 04",
     },
     hideTitle: true,
@@ -106,7 +106,7 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "/images/5-copyline-.jpg",
+      src: "/images/5-copyline.jpg",
       alt: "Copyline Crafter 05",
     },
     hideTitle: true,
