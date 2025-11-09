@@ -155,8 +155,8 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "/images/xxx",
-      alt: "Three files you need",
+      src: "/images/checklist.png",
+      alt: "Three files you need checklist",
     },
     hideTitle: true,
   },
