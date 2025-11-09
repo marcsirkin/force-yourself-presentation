@@ -112,9 +112,9 @@ export const demoSlides: Slide[] = [
   },
   
   
-  // Slide 12: CopyCrafter title
+  // Slide 12: CopyLine Crafter title
   {
-    title: "COPYCRAFTER: SEE IT WORK",
+    title: "COPYLINE CRAFTER IN ACTION",
     body: {
       type: "html",
       html: "From frameworks and briefs to variants in 30 seconds.",
