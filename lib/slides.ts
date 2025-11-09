@@ -67,6 +67,39 @@ export const demoSlides: Slide[] = [
     },
   },
    {
+    title: "REPLACE THE PLAYBOOK",
+    body: {
+      type: "html",
+      html: "Build a factory: SPOT → BUILD → TEST → SCALE",
+    },
+  },
+    {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/spot-process.png",
+      alt: "SPOT BUILD TEST SCALE DIAGRAM",
+    },
+    hideTitle: true,
+  },
+      {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/ai-factory.png",
+      alt: "AI Factory",
+    },
+    hideTitle: true,
+  },
+   
+    {
+    title: "COPYLINE CRAFTER",
+    body: {
+      type: "text",
+      text: "See it at work.",
+    },
+  },
+   {
     title: "Image Interlude",
     media: {
       kind: "image",
@@ -111,33 +144,7 @@ export const demoSlides: Slide[] = [
     },
     hideTitle: true,
   },
-
-    {
-    title: "Image Interlude",
-    media: {
-      kind: "image",
-      src: "/images/ai-factory.png",
-      alt: "AI Factory",
-    },
-    hideTitle: true,
-  },
-   {
-    title: "REPLACE THE PLAYBOOK",
-    body: {
-      type: "html",
-      html: "Build a factory: SPOT → BUILD → TEST → SCALE",
-    },
-  },
-    {
-    title: "Image Interlude",
-    media: {
-      kind: "image",
-      src: "/images/spot-process.png",
-      alt: "SPOT BUILD TEST SCALE DIAGRAM",
-    },
-    hideTitle: true,
-  },
-    {
+  {
     title: "SECRET SAUCE",
     body: {
       type: "html",
@@ -145,10 +152,27 @@ export const demoSlides: Slide[] = [
     },
   },
    {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/xxx",
+      alt: "Three files you need",
+    },
+    hideTitle: true,
+  },
+   
+   {
     title: "PLAYBOOKS END",
     body: {
       type: "html",
       html: "Experiments Compound.",
+    },
+  },
+    {
+    title: "COPYLINE CRAFTER",
+    body: {
+      type: "html",
+      html: "From brief to variants in 30 seconds.",
     },
   },
    {
