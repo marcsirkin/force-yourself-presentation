@@ -92,11 +92,11 @@ export const demoSlides: Slide[] = [
     hideTitle: true,
   },
    
-    {
+     {
     title: "COPYLINE CRAFTER",
     body: {
-      type: "text",
-      text: "See it at work.",
+      type: "html",
+      html: "From frameworks and briefs to variants in 30 seconds.",
     },
   },
    {
@@ -168,13 +168,7 @@ export const demoSlides: Slide[] = [
       html: "Experiments Compound.",
     },
   },
-    {
-    title: "COPYLINE CRAFTER",
-    body: {
-      type: "html",
-      html: "From brief to variants in 30 seconds.",
-    },
-  },
+  
    {
     title: "Image Interlude",
     media: {
