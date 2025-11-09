@@ -84,7 +84,7 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "/images/martech-map-marketing-technology-landscape-1456.jpg",
+      src: "/images/AI-process.png",
       alt: "SPOT BUILD TEST SCALE DIAGRAM",
     },
     hideTitle: true,
