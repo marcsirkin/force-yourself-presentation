@@ -54,7 +54,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
         {showHeading ? (
           <div className="overflow-hidden text-center">
             <motion.h2
-              className="font-black uppercase tracking-[0.14em] text-[clamp(3.5rem,9vw,8rem)] leading-[0.95] drop-shadow-[0_16px_32px_rgba(0,0,0,0.38)]"
+              className="font-black uppercase tracking-[0.14em] text-[clamp(2.625rem,6.75vw,6rem)] leading-[0.95] drop-shadow-[0_16px_32px_rgba(0,0,0,0.38)]"
               variants={maskReveal}
             >
               <GlitchText>{title}</GlitchText>
@@ -92,7 +92,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
           </motion.div>
         ) : children ? (
           <motion.div
-            className={`mx-auto mt-10 max-w-3xl text-center text-xs font-semibold uppercase tracking-[0.26em] sm:text-sm sm:tracking-[0.3em] md:text-base md:tracking-[0.34em] ${
+            className={`mx-auto mt-10 max-w-3xl text-center text-[0.86rem] font-semibold uppercase tracking-[0.26em] sm:text-[1.01rem] sm:tracking-[0.3em] md:text-[1.15rem] md:tracking-[0.34em] ${
               dark ? "text-white/75" : "text-black/70"
             } [&_a]:underline [&_a]:underline-offset-[0.45em] [&_a]:decoration-2 [&_a]:transition-colors ${
               dark
