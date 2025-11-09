@@ -18,6 +18,8 @@ This project is a scrollytelling presentation built with Next.js, Tailwind CSS, 
 
 The default slides live in [`lib/slides.tsx`](./lib/slides.tsx). Update the `demoSlides` array or add new entries there—each object maps directly to a rendered `Section`.
 
+The scaffold already includes the sample media you asked for: one slide embeds the YouTube clip at `https://www.youtube.com/watch?v=8Fey680pHCk` and another pulls in the image from `https://yavuzceliker.github.io/sample-images/image-1021.jpg`. Feel free to replace those URLs or duplicate the pattern for additional media-only beats.
+
 Because the file is a `.tsx` module you can use JSX for richer formatting. For example, to add a hyperlink:
 
 ```tsx

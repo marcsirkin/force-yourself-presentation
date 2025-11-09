@@ -49,6 +49,12 @@ export default function Presentation({ slides }: PresentationProps) {
   }, [slides.length]);
 
   const handleAdvance = useCallback(() => {
+    const target = sectionRefs.current[activeIndex + 1];
+
+    if (!target) {
+      return;
+    }
+
     const sections = sectionRefs.current.filter((section): section is HTMLElement => Boolean(section));
     if (!sections.length) {
       return;
