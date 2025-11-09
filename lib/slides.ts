@@ -101,35 +101,6 @@ export const demoSlides: Slide[] = [
     hideTitle: true,
   },
 
-
-  // NEW SLIDE 19: Teaser frame
-  {
-    title: "THE SECRET? IT'S NOT THE TOOLS.",
-    body: {
-      type: "html",
-      html: "Watch what happens when you see it in action.",
-    },
-  },
-
-  {
-  title: "START HERE",
-  body: {
-    type: "html",
-    html: "Build these once. Use them everywhere.<br><br><strong>1. ICP Definition</strong> – Who you serve, what they need<br><strong>2. Company Description</strong> – Your positioning, voice, offers<br><strong>3. Process Docs</strong> – How you do the thing, with examples",
-  },
-},
-
-      // Slide 11: Secret sauce image (teaser, no explanation yet)
-  {
-    title: "Image Interlude",
-    media: {
-      kind: "image",
-      src: "/images/secretsauce.png",
-      alt: "Knowledge base preview",
-    },
-    hideTitle: true,
-  },
-  
   
   // Slide 12: CopyLine Crafter title
   {
@@ -186,7 +157,7 @@ export const demoSlides: Slide[] = [
     },
     hideTitle: true,
   },
-  
+
   // Slide 18: Now reveal the secret
   {
     title: "THE SECRET!",
@@ -196,6 +167,25 @@ export const demoSlides: Slide[] = [
     },
   },
   
+        // Slide 11: Secret sauce image (teaser, no explanation yet)
+  {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/secretsauce.png",
+      alt: "Knowledge base preview",
+    },
+    hideTitle: true,
+  },
+  
+
+{
+  title: "START HERE!",
+  body: {
+    type: "html",
+    html: "Build these once. Use them everywhere.<br><br><strong>1. ICP Definition</strong> – Who you serve, what they need<br><strong>2. Company Description</strong> – Your positioning, voice, offers<br><strong>3. Process Docs</strong> – How you do the thing, with examples",
+  },
+},
   
   // Slide 19: Mic drop
   {
