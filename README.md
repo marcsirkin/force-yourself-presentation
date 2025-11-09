@@ -1,23 +1,54 @@
-# Force Yourself Presentation
+# Force Yourself to Experiment: Because Your Playbook Is Broken
 
-This project is a scrollytelling presentation built with Next.js, Tailwind CSS, Lenis, and Framer Motion. It was built the weekend of November 8/9 using ChatGPT Codex and Claude as an example of both vibe coding and vibe marketing.
+A scrollytelling presentation built with Next.js, Tailwind CSS, Lenis (smooth scrolling), and Framer Motion (animations). Optimized for live presentation delivery with keyboard navigation and full-screen media support.
 
-Live presentation site: https://force-yourself-presentation-git-main-marc-sirkins-projects.vercel.app/
+Built the weekend of November 8/9, 2025, using ChatGPT and Claude as an example of both **vibe coding** and **vibe marketing**.
 
-## Custom GPTs (AI Factory floor)
-1. Copyline Crafter v2 https://chatgpt.com/g/g-xjqgObyMk-copyline-crafter-v2
-2. Company Analyzer https://chatgpt.com/g/g-681ce1e585188191a1e6c15f80ddc6be-company-analyzer
-3. Sales Call Analyzer https://chatgpt.com/g/g-68cb0d44c3488191a928f56551bd6984-sales-call-analyzer
-4. Third Door Media Image GPT https://chatgpt.com/g/g-689ca3cbc84081918964144812318306-tdm-image-builder
-5. Down by the River motivation https://chatgpt.com/g/g-qonWiNcwy-down-by-the-river-motivation-v2
-6. World-building https://chatgpt.com/g/g-68d96de857e08191ba68807584b65619-writing-tools-ultimate-world-builder
-7. Prompt Architect https://chatgpt.com/g/g-68010c3edbe8819187e67c551621c756-prompt-architect
+**[→ View Live Presentation](https://force-yourself-presentation-git-main-marc-sirkins-projects.vercel.app/)**
 
-## About the creator
-3. Playbook Broken podcast https://marcsirkin.substack.com/
-4. Marc Sirkin Consulting https://www.sirkin.com/
-5. Marc Sirkin LinkedIn https://www.linkedin.com/in/marcsirkin/
-6. Scott Brinker's Martech Map https://chiefmartec.com/2025/05/2025-marketing-technology-landscape-supergraphic-100x-growth-since-2011-but-now-with-ai/
+---
+
+## The Meta Moment
+
+This isn't just a presentation *about* AI experimentation—it's a **live demonstration**.
+
+I built the technical aspects (vibe coding!) in about 5 hours using Codex and Claude to deliver a talk about replacing playbooks with experimentation factories. The app itself proves the thesis:
+
+- **SPOT** friction (PowerPoint doesn't fit the message)
+- **BUILD** fast (weekend build)
+- **TEST** in production (you're looking at it)
+- **SCALE** if it works
+
+If you're watching the presentation, I reveal this at the end. If you're reading the repo first, now you know: the medium IS the message.
+
+It's also accurate to say that I used the concept of vibe marketing to help me refine the talking points, hone in on concepts and act like a coach and advisor. I do hope you enjoy the talk!
+
+---
+
+## The Factory: Custom GPTs Used in This Talk
+
+The presentation references these custom GPTs—each built in 2-4 hours and running in production:
+
+- **[CopyCrafter v2](https://chatgpt.com/g/g-xjqgObyMk-copyline-crafter-v2)** – Generates copy variants with frameworks in 30 seconds
+- **[Company Analyzer](https://chatgpt.com/g/g-681ce1e585188191a1e6c15f80ddc6be-company-analyzer)** – Extracts ICP, positioning, and competitive intel from websites
+- **[Sales Call Analyzer](https://chatgpt.com/g/g-68cb0d44c3488191a928f56551bd6984-sales-call-analyzer)** – Turns call transcripts into insights and follow-up actions
+- **[TDM Image Builder](https://chatgpt.com/g/g-689ca3cbc84081918964144812318306-tdm-image-builder)** – Creates on-brand visuals using style guide constraints
+- **[Down by the River](https://chatgpt.com/g/g-qonWiNcwy-down-by-the-river-motivation-v2)** – Motivational coaching and all the laughs
+- **[World Builder](https://chatgpt.com/g/g-68d96de857e08191ba68807584b65619-writing-tools-ultimate-world-builder)** – Story development and world-building 
+- **[Prompt Architect](https://chatgpt.com/g/g-68010c3edbe8819187e67c551621c756-prompt-architect)** – Designs and optimizes prompt structures
+
+Each one follows the **SPOT → BUILD → TEST → SCALE** loop demonstrated in the talk.
+
+---
+
+## Who is Marc Sirkin?
+
+- **[Playbook Broken Podcast](https://marcsirkin.substack.com/)** – Real conversations about AI and marketing, no corporate theater
+- **[Marc Sirkin Consulting](https://www.sirkin.com/)** – Advisory and execution for AI-driven marketing and growth
+- **[Marc on LinkedIn](https://www.linkedin.com/in/marcsirkin/)** – Connect for speaking, workshops, and collaboration
+- **[Scott Brinker's Martech Map](https://chiefmartec.com/2025/05/2025-marketing-technology-landscape-supergraphic-100x-growth-since-2011-but-now-with-ai/)** – The landscape graphic used in Slide 3
+
+---
 
 ## Local Development
 
