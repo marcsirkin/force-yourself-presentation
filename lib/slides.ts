@@ -177,18 +177,8 @@ export const demoSlides: Slide[] = [
     },
   },
   
-  // Slide 19: Checklist
-  {
-    title: "Image Interlude",
-    media: {
-      kind: "image",
-      src: "/images/checklist.png",
-      alt: "Three files you need: ICP, Company Description, Process Docs",
-    },
-    hideTitle: true,
-  },
   
-  // Slide 20: Mic drop
+  // Slide 19: Mic drop
   {
     title: "PLAYBOOKS END.",
     body: {
@@ -197,7 +187,7 @@ export const demoSlides: Slide[] = [
     },
   },
   
-  // Slide 21: Thank you
+  // Slide 20: Thank you
   {
     title: "Image Interlude",
     media: {
