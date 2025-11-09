@@ -47,7 +47,7 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "public/images/martech-map-marketing-technology-landscape-1456.jpg",
+      src: "/images/martech-map-marketing-technology-landscape-1456.jpg",
       alt: "Scott Brinkers 2025 Marketing Map",
     },
     hideTitle: true,
