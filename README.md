@@ -16,29 +16,35 @@ This project is a scrollytelling presentation built with Next.js, Tailwind CSS, 
 
 ### Editing Slide Content
 
-The default slides live in [`lib/slides.tsx`](./lib/slides.tsx). Update the `demoSlides` array or add new entries there—each object maps directly to a rendered `Section`.
+The default slides live in [`lib/slides.ts`](./lib/slides.ts). Update the `demoSlides` array or add new entries there—each object maps directly to a rendered `Section`.
 
 The scaffold already includes the sample media you asked for: one slide embeds the YouTube clip at `https://www.youtube.com/watch?v=8Fey680pHCk` and another pulls in the image from `https://yavuzceliker.github.io/sample-images/image-1021.jpg`. Feel free to replace those URLs or duplicate the pattern for additional media-only beats.
 
-Because the file is a `.tsx` module you can use JSX for richer formatting. For example, to add a hyperlink:
+Each slide body can be plain text or marked up HTML. Use `type: "text"` when you only need copy:
 
-```tsx
+```ts
 {
-  title: "Resources",
-  body: (
-    <p>
-      Dive deeper in the
-      {" "}
-      <a href="https://example.com" target="_blank" rel="noreferrer">
-        full case study
-      </a>
-      .
-    </p>
-  ),
+  title: "Hello, World",
+  body: {
+    type: "text",
+    text: "This is your opening slide. Tweak the text to set the tone of your story.",
+  },
 }
 ```
 
-Any anchors inherit presentation-friendly styling automatically, so you only need to supply the URL.
+Switch to `type: "html"` any time you want inline formatting such as hyperlinks:
+
+```ts
+{
+  title: "Resources",
+  body: {
+    type: "html",
+    html: "Dive deeper in the <a href=\"https://example.com\" target=\"_blank\" rel=\"noreferrer\">full case study</a> when you want supporting detail.",
+  },
+}
+```
+
+Any anchors inherit presentation-friendly styling automatically, so you only need to supply the URL and link text inside the HTML string.
 
 ### Adding imagery or video-only slides
 
@@ -67,7 +73,6 @@ want the slide to showcase only the image or video:
 ```
 
 Media slides are responsive by default—the wrapper keeps a 16:9 ratio, rounds the corners, and scales smoothly on any viewport.
-The default slides live in [`lib/slides.ts`](./lib/slides.ts). Update the `demoSlides` array or add new entries there—each object maps directly to a rendered `Section`.
 
 ## GitHub Workflow
 

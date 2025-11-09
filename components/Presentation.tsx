@@ -55,18 +55,6 @@ export default function Presentation({ slides }: PresentationProps) {
       return;
     }
 
-    const sections = sectionRefs.current.filter((section): section is HTMLElement => Boolean(section));
-    if (!sections.length) {
-      return;
-    }
-
-    const nextIndex = Math.min(activeIndex + 1, sections.length - 1);
-    if (nextIndex === activeIndex) {
-      return;
-    }
-
-    const target = sections[nextIndex];
-
     if (lenis) {
       lenis.scrollTo(target);
     } else {
@@ -93,13 +81,7 @@ export default function Presentation({ slides }: PresentationProps) {
     <main className="relative bg-black">
       {slides.map(({ title, body, media, hideTitle }, index) => {
         const hasMedia = Boolean(media);
-        const content =
-          !hasMedia && (typeof body === "string" || typeof body === "number"
-            ? <p>{body}</p>
-            : body ?? null);
-      {slides.map(({ title, body }, index) => {
-        const content =
-          typeof body === "string" || typeof body === "number" ? <p>{body}</p> : body ?? null;
+        const content = !hasMedia ? renderBody(body) : null;
 
         return (
           <Section
@@ -116,21 +98,30 @@ export default function Presentation({ slides }: PresentationProps) {
           </Section>
         );
       })}
-      {slides.map(({ title, body }, index) => (
-        <Section
-          key={`${index}-${title}`}
-          title={title}
-          index={index}
-          ref={(element) => {
-            sectionRefs.current[index] = element;
-          }}
-        >
-          {body ? <p>{body}</p> : null}
-        </Section>
-      ))}
       {slides.length > 1 ? (
         <NextArrow onClick={handleAdvance} disabled={isLastSlide} label={nextLabel} />
       ) : null}
     </main>
   );
+}
+
+function renderBody(body: Slide["body"]) {
+  if (!body) {
+    return null;
+  }
+
+  if (body.type === "text") {
+    return <p>{body.text}</p>;
+  }
+
+  if (body.type === "html") {
+    return (
+      <p
+        dangerouslySetInnerHTML={{ __html: body.html }}
+        suppressHydrationWarning
+      />
+    );
+  }
+
+  return null;
 }
