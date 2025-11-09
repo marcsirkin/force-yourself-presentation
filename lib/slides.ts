@@ -132,7 +132,7 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "/images/AI-process.png",
+      src: "/images/spot-process.png",
       alt: "SPOT BUILD TEST SCALE DIAGRAM",
     },
     hideTitle: true,
@@ -155,7 +155,7 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "/images/AI-process.png",
+      src: "/images/spot-process.png",
       alt: "QR Code/Thank you",
     },
     hideTitle: true,
