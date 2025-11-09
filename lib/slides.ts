@@ -70,7 +70,7 @@ export const demoSlides: Slide[] = [
     title: "AI ISN'T TAKING JOBS",
     body: {
       type: "html",
-      html: "It's taking bad habits.",
+      html: "But it will force you to break bad habits.",
     },
   },
    {
@@ -90,7 +90,7 @@ export const demoSlides: Slide[] = [
     hideTitle: true,
   },
     {
-    title: "FEAR. EGO. APPROVAL",
+    title: "FEAR. EGO. APPROVAL.",
     body: {
       type: "html",
       html: "The only way to get good at this is to start.",
