@@ -23,10 +23,10 @@ export type Slide = {
 
 export const demoSlides: Slide[] = [
   {
-    title: "FORCE YOURSELF TO EXPERIMENT",
+    title: "FORCE YOURSELF...",
     body: {
       type: "text",
-      text: "Because Your Playbook Is Broken.",
+      text: "To Experiment Because Your Playbook Is Broken.",
     },
   },
   {
@@ -60,7 +60,7 @@ export const demoSlides: Slide[] = [
     },
   },
      {
-    title: "THE FIRST TIME AI OUTPERFORMED ME",
+    title: "AI OUTPERFORMED ME",
     body: {
       type: "html",
       html: "I wasn't mad. I was thrilled.",
