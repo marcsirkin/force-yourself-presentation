@@ -18,6 +18,8 @@ This project is a scrollytelling presentation built with Next.js, Tailwind CSS, 
 
 The default slides live in [`lib/slides.ts`](./lib/slides.ts). Update the `demoSlides` array or add new entries there—each object maps directly to a rendered `Section`.
 
+> **Heads up:** the TypeScript path alias now pins `@/lib/slides` directly to this file. If you still see an old `lib/slides/index.ts` or similarly named file in your clone, delete it so you only have this single source of truth before editing.
+
 The scaffold already includes the sample media you asked for: one slide embeds the YouTube clip at `https://www.youtube.com/watch?v=8Fey680pHCk` and another pulls in the image from `https://yavuzceliker.github.io/sample-images/image-1021.jpg`. Feel free to replace those URLs or duplicate the pattern for additional media-only beats.
 
 Each slide body can be plain text or marked up HTML. Use `type: "text"` when you only need copy:
