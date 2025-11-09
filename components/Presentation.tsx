@@ -91,6 +91,9 @@ export default function Presentation({ slides }: PresentationProps) {
           !hasMedia && (typeof body === "string" || typeof body === "number"
             ? <p>{body}</p>
             : body ?? null);
+      {slides.map(({ title, body }, index) => {
+        const content =
+          typeof body === "string" || typeof body === "number" ? <p>{body}</p> : body ?? null;
 
         return (
           <Section
@@ -107,6 +110,18 @@ export default function Presentation({ slides }: PresentationProps) {
           </Section>
         );
       })}
+      {slides.map(({ title, body }, index) => (
+        <Section
+          key={`${index}-${title}`}
+          title={title}
+          index={index}
+          ref={(element) => {
+            sectionRefs.current[index] = element;
+          }}
+        >
+          {body ? <p>{body}</p> : null}
+        </Section>
+      ))}
       {slides.length > 1 ? (
         <NextArrow onClick={handleAdvance} disabled={isLastSlide} label={nextLabel} />
       ) : null}

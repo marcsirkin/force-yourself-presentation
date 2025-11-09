@@ -17,6 +17,9 @@ export type Slide = {
   body?: ReactNode;
   media?: SlideMedia;
   hideTitle?: boolean;
+export type Slide = {
+  title: string;
+  body?: ReactNode;
 };
 
 export const demoSlides: Slide[] = [
@@ -33,6 +36,9 @@ export const demoSlides: Slide[] = [
     body: (
       <p>
         Use this section to highlight your first reveal. Duplicate items in `demoSlides` for more slides, or{" "}
+      <>
+        Use this section to highlight your first reveal. Duplicate items in `demoSlides` for more slides, or
+        {" "}
         <a
           href="https://nextjs.org/learn"
           className="inline-block"
@@ -62,5 +68,10 @@ export const demoSlides: Slide[] = [
       title: "Synthwave Journey",
     },
     hideTitle: true,
+  },
+        </a>
+        when you need to.
+      </>
+    ),
   },
 ];
