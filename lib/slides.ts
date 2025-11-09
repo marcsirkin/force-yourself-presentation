@@ -10,13 +10,10 @@ export type SlideMedia =
       title: string;
     };
 
-export type SlideBody =
-  | { type: "text"; text: string }
-  | { type: "html"; html: string };
-
 export type Slide = {
   title: string;
-  body?: SlideBody;
+  // simplified: body is now a plain string (can contain HTML)
+  body?: string;
   media?: SlideMedia;
   hideTitle?: boolean;
 };
@@ -24,24 +21,15 @@ export type Slide = {
 export const demoSlides: Slide[] = [
   {
     title: "FORCE YOURSELF",
-    body: {
-      type: "text",
-      text: "Force yourself to experiment because your playbook is broken.",
-    },
+    body: "Force yourself to experiment because your playbook is broken.",
   },
   {
     title: "MARC SIRKIN ",
-    body: {
-      type: "text",
-      text: "Former CEO, Third Door Media (MarTech, Search Engine Land) Founder, Marc Sirkin Consulting",
-    },
+    body: "Former CEO, Third Door Media (MarTech, Search Engine Land) Founder, Marc Sirkin Consulting",
   },
   {
     title: "OMG, It Works",
-    body: {
-      type: "html",
-      html: "Use this section to highlight your first reveal. Duplicate items in <code>demoSlides</code> for more slides, or <a href=\"https://nextjs.org/learn\" target=\"_blank\" rel=\"noreferrer\">link out to supporting material</a> when you need to.",
-    },
+    body: "Use this section to highlight your first reveal. Duplicate items in <code>demoSlides</code> for more slides, or <a href=\"https://nextjs.org/learn\" target=\"_blank\" rel=\"noreferrer\">link out to supporting material</a> when you need to.",
   },
   {
     title: "Image Interlude",
