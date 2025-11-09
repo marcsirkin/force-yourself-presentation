@@ -22,7 +22,7 @@ export type Slide = {
 };
 
 export const demoSlides: Slide[] = [
-  {
+ {
     title: "FORCE YOURSELF...",
     body: {
       type: "text",
@@ -36,7 +36,7 @@ export const demoSlides: Slide[] = [
       text: "Former CEO, Third Door Media (MarTech, Search Engine Land) Founder, Marc Sirkin Consulting.",
     },
   },
-    {
+  {
     title: "Image Interlude",
     media: {
       kind: "image",
@@ -52,28 +52,28 @@ export const demoSlides: Slide[] = [
       html: "The funnel is a Choose Your Own Adventure book now.",
     },
   },
-   {
+  {
     title: "AI DIDN'T BREAK MARKETING",
     body: {
       type: "html",
       html: "It exposed how fragile it already was.",
     },
   },
-   {
+  {
     title: "AI BEAT ME",
     body: {
       type: "html",
       html: "I wasn't mad. I was thrilled.",
     },
   },
-   {
+  {
     title: "REPLACE THE PLAYBOOK",
     body: {
       type: "html",
       html: "Build a factory: SPOT → BUILD → TEST → SCALE",
     },
   },
-    {
+  {
     title: "Image Interlude",
     media: {
       kind: "image",
@@ -82,7 +82,7 @@ export const demoSlides: Slide[] = [
     },
     hideTitle: true,
   },
-      {
+  {
     title: "Image Interlude",
     media: {
       kind: "image",
@@ -91,15 +91,38 @@ export const demoSlides: Slide[] = [
     },
     hideTitle: true,
   },
-   
-     {
-    title: "COPYLINE CRAFTER",
+  
+  // NEW SLIDE 10: Teaser frame
+  {
+    title: "THE SECRET? IT'S NOT THE TOOLS.",
+    body: {
+      type: "html",
+      html: "Watch what happens when you see it in action.",
+    },
+  },
+  
+  // Slide 11: Secret sauce image (teaser, no explanation yet)
+  {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/secretsauce.png",
+      alt: "Knowledge base preview",
+    },
+    hideTitle: true,
+  },
+  
+  // Slide 12: CopyCrafter title
+  {
+    title: "COPYCRAFTER: SEE IT WORK",
     body: {
       type: "html",
       html: "From frameworks and briefs to variants in 30 seconds.",
     },
   },
-   {
+  
+  // Slides 13-17: CopyCrafter walkthrough
+  {
     title: "Image Interlude",
     media: {
       kind: "image",
@@ -108,7 +131,7 @@ export const demoSlides: Slide[] = [
     },
     hideTitle: true,
   },
-   {
+  {
     title: "Image Interlude",
     media: {
       kind: "image",
@@ -117,7 +140,7 @@ export const demoSlides: Slide[] = [
     },
     hideTitle: true,
   },
-   {
+  {
     title: "Image Interlude",
     media: {
       kind: "image",
@@ -126,7 +149,7 @@ export const demoSlides: Slide[] = [
     },
     hideTitle: true,
   },
-   {
+  {
     title: "Image Interlude",
     media: {
       kind: "image",
@@ -135,7 +158,7 @@ export const demoSlides: Slide[] = [
     },
     hideTitle: true,
   },
-   {
+  {
     title: "Image Interlude",
     media: {
       kind: "image",
@@ -144,57 +167,43 @@ export const demoSlides: Slide[] = [
     },
     hideTitle: true,
   },
+  
+  // Slide 18: Now reveal the secret
   {
-    title: "SECRET SAUCE",
+    title: "THE SECRET: KNOWLEDGE BASE, NOT JUST PROMPTS",
     body: {
       type: "html",
-      html: "Key files that make every GPT (or Gem, or Skill) 10x smarter.",
+      html: "These files make every GPT 10x smarter.",
     },
   },
-   {
+  
+  // Slide 19: Checklist
+  {
     title: "Image Interlude",
     media: {
       kind: "image",
       src: "/images/checklist.png",
-      alt: "Three files you need checklist",
+      alt: "Three files you need: ICP, Company Description, Process Docs",
     },
     hideTitle: true,
   },
-
-     {
-    title: "Image Interlude",
-    media: {
-      kind: "image",
-      src: "/images/secretsauce.png",
-      alt: "Factory sauce",
-    },
-    hideTitle: true,
-  },
-   
-   {
-    title: "PLAYBOOKS END",
+  
+  // Slide 20: Mic drop
+  {
+    title: "PLAYBOOKS END.",
     body: {
       type: "html",
       html: "Experiments Compound.",
     },
   },
   
-   {
+  // Slide 21: Thank you
+  {
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "/images/spot-process.png",
-      alt: "QR Code/Thank you",
-    },
-    hideTitle: true,
-  },
-  
-  {
-    title: "Cinematic Break",
-    media: {
-      kind: "video",
-      src: "https://www.youtube.com/embed/8Fey680pHCk?rel=0&modestbranding=1",
-      title: "Synthwave Journey",
+      src: "/images/qr-thanks.png",
+      alt: "QR Code - Thank you",
     },
     hideTitle: true,
   },
