@@ -59,6 +59,15 @@ export const demoSlides: Slide[] = [
       html: "It exposed how fragile it already was.",
     },
   },
+   {
+    title: "Cinematic Break",
+    media: {
+      kind: "video",
+      src: "https://www.youtube.com/embed/8Fey680pHCk?rel=0&modestbranding=1",
+      title: "Copyline Crafter video",
+    },
+    hideTitle: true,
+  },
      {
     title: "AI BEAT ME",
     body: {
