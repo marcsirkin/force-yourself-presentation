@@ -60,27 +60,66 @@ export const demoSlides: Slide[] = [
     },
   },
    {
-    title: "Cinematic Break",
-    media: {
-      kind: "video",
-      src: "https://www.youtube.com/embed/8Fey680pHCk?rel=0&modestbranding=1",
-      title: "Copyline Crafter video",
-    },
-    hideTitle: true,
-  },
-     {
     title: "AI BEAT ME",
     body: {
       type: "html",
       html: "I wasn't mad. I was thrilled.",
     },
   },
-    {
-    title: "AI ISN'T TAKING JOBS",
-    body: {
-      type: "html",
-      html: "But it will force you to break bad habits.",
+   {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/1-copyline-.jpg",
+      alt: "Copyline Crafter 01",
     },
+    hideTitle: true,
+  },
+   {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/2-copyline-.jpg",
+      alt: "Copyline Crafter 02",
+    },
+    hideTitle: true,
+  },
+   {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/3-copyline-.jpg",
+      alt: "Copyline Crafter 03",
+    },
+    hideTitle: true,
+  },
+   {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/4-copyline-.jpg",
+      alt: "Copyline Crafter 04",
+    },
+    hideTitle: true,
+  },
+   {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/5-copyline-.jpg",
+      alt: "Copyline Crafter 05",
+    },
+    hideTitle: true,
+  },
+
+    {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/ai-factory.png",
+      alt: "AI Factory",
+    },
+    hideTitle: true,
   },
    {
     title: "REPLACE THE PLAYBOOK",
@@ -99,10 +138,10 @@ export const demoSlides: Slide[] = [
     hideTitle: true,
   },
     {
-    title: "FEAR. EGO. APPROVAL.",
+    title: "SECRET SAUCE",
     body: {
       type: "html",
-      html: "The only way to get good at this is to start.",
+      html: "Key files that make every GPT (or Gem, or Skill) 10x smarter.",
     },
   },
    {
@@ -112,6 +151,16 @@ export const demoSlides: Slide[] = [
       html: "Experiments Compound.",
     },
   },
+   {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/AI-process.png",
+      alt: "QR Code/Thank you",
+    },
+    hideTitle: true,
+  },
+  
   {
     title: "Cinematic Break",
     media: {
