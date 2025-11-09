@@ -46,11 +46,11 @@ Each one follows the **SPOT → BUILD → TEST → SCALE** loop demonstrated in 
 - **[Playbook Broken Podcast](https://marcsirkin.substack.com/)** – Real conversations about AI and marketing, no corporate theater
 - **[Marc Sirkin Consulting](https://www.sirkin.com/)** – Advisory and execution for AI-driven marketing and growth
 - **[Marc on LinkedIn](https://www.linkedin.com/in/marcsirkin/)** – Connect for speaking, workshops, and collaboration
-- **[Scott Brinker's Martech Map](https://chiefmartec.com/2025/05/2025-marketing-technology-landscape-supergraphic-100x-growth-since-2011-but-now-with-ai/)** – The landscape graphic used in Slide 3
+- **[Scott Brinker's Martech Map](https://chiefmartec.com/2025/05/2025-marketing-technology-landscape-supergraphic-100x-growth-since-2011-but-now-with-ai/)** – The landscape graphic used in Slide 3. Scott's devotion to tiny logos is legendary. I even made a Sora2 video about it: https://sora.chatgpt.com/p/s_68e1631c7ec08191ab71e25c85b9876e
 
 ---
 
-## Local Development
+## Technical Details: Local Development
 
 1. Install dependencies:
    ```bash
