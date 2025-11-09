@@ -1,15 +1,28 @@
 "use client";
 
+import Image from "next/image";
 import { ReactNode, forwardRef } from "react";
 import { motion } from "framer-motion";
 import GlitchText from "./GlitchText";
 import { fadeUp, maskReveal, sectionReveal, staggerChildren } from "@/lib/animations";
+import type { SlideMedia } from "@/lib/slides";
 
 interface SectionProps {
   title: string;
   children?: ReactNode;
   dark?: boolean;
   index?: number;
+  media?: SlideMedia;
+  hideTitle?: boolean;
+}
+
+const Section = forwardRef<HTMLElement, SectionProps>(function Section(
+  { title, children, dark = true, index, media, hideTitle = false }: SectionProps,
+  ref,
+) {
+  const hasMedia = Boolean(media);
+  const showHeading = !hideTitle;
+
 }
 
 const Section = forwardRef<HTMLElement, SectionProps>(function Section(
@@ -40,6 +53,52 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
           }}
         />
       </div>
+      <motion.div
+        className={`relative z-10 w-full ${hasMedia ? "max-w-6xl" : "max-w-5xl text-center"}`}
+        variants={staggerChildren}
+      >
+        {showHeading ? (
+          <div className="overflow-hidden text-center">
+            <motion.h2
+              className="font-black uppercase tracking-[0.14em] text-[clamp(3.5rem,9vw,8rem)] leading-[0.95] drop-shadow-[0_16px_32px_rgba(0,0,0,0.38)]"
+              variants={maskReveal}
+            >
+              <GlitchText>{title}</GlitchText>
+            </motion.h2>
+          </div>
+        ) : (
+          <h2 className="sr-only">{title}</h2>
+        )}
+        {hasMedia ? (
+          <motion.div
+            className="mx-auto mt-16 w-full max-w-5xl"
+            variants={fadeUp}
+          >
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[min(3vw,2.5rem)] border border-white/15 bg-white/5 shadow-[0_45px_120px_rgba(0,0,0,0.45)]">
+              {media?.kind === "image" ? (
+                <Image
+                  src={media.src}
+                  alt={media.alt}
+                  fill
+                  className="h-full w-full object-cover"
+                  sizes="(min-width: 1280px) 896px, (min-width: 768px) 80vw, 92vw"
+                />
+              ) : null}
+              {media?.kind === "video" ? (
+                <iframe
+                  src={media.src}
+                  title={media.title || title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  loading="lazy"
+                  className="h-full w-full"
+                />
+              ) : null}
+            </div>
+          </motion.div>
+        ) : children ? (
+          <motion.div
+            className={`mx-auto mt-10 max-w-3xl text-center text-xs font-semibold uppercase tracking-[0.26em] sm:text-sm sm:tracking-[0.3em] md:text-base md:tracking-[0.34em] ${
       <motion.div className="relative z-10 max-w-5xl text-center" variants={staggerChildren}>
         <div className="overflow-hidden">
           <motion.h2

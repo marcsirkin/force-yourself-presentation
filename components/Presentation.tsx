@@ -85,6 +85,12 @@ export default function Presentation({ slides }: PresentationProps) {
 
   return (
     <main className="relative bg-black">
+      {slides.map(({ title, body, media, hideTitle }, index) => {
+        const hasMedia = Boolean(media);
+        const content =
+          !hasMedia && (typeof body === "string" || typeof body === "number"
+            ? <p>{body}</p>
+            : body ?? null);
       {slides.map(({ title, body }, index) => {
         const content =
           typeof body === "string" || typeof body === "number" ? <p>{body}</p> : body ?? null;
@@ -94,6 +100,8 @@ export default function Presentation({ slides }: PresentationProps) {
             key={`${index}-${title}`}
             title={title}
             index={index}
+            media={media}
+            hideTitle={hideTitle}
             ref={(element) => {
               sectionRefs.current[index] = element;
             }}

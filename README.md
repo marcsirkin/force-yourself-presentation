@@ -37,6 +37,34 @@ Because the file is a `.tsx` module you can use JSX for richer formatting. For e
 ```
 
 Any anchors inherit presentation-friendly styling automatically, so you only need to supply the URL.
+
+### Adding imagery or video-only slides
+
+Slides can now render a full-bleed asset instead of text. Provide a `media` object and (optionally) set `hideTitle: true` when you
+want the slide to showcase only the image or video:
+
+```tsx
+{
+  title: "Image Interlude",
+  hideTitle: true,
+  media: {
+    kind: "image",
+    src: "https://your-domain.com/path/to/image.jpg",
+    alt: "Describe the frame for accessibility",
+  },
+},
+{
+  title: "Cinematic Break",
+  hideTitle: true,
+  media: {
+    kind: "video",
+    src: "https://www.youtube.com/embed/your-id?rel=0&modestbranding=1",
+    title: "Video player title for screen readers",
+  },
+},
+```
+
+Media slides are responsive by default—the wrapper keeps a 16:9 ratio, rounds the corners, and scales smoothly on any viewport.
 The default slides live in [`lib/slides.ts`](./lib/slides.ts). Update the `demoSlides` array or add new entries there—each object maps directly to a rendered `Section`.
 
 ## GitHub Workflow
