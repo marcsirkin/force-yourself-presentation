@@ -92,7 +92,17 @@ export const demoSlides: Slide[] = [
     hideTitle: true,
   },
 
-    // Slide 10: Secret sauce image (teaser, no explanation yet)
+
+  // NEW SLIDE 19: Teaser frame
+  {
+    title: "THE SECRET? IT'S NOT THE TOOLS.",
+    body: {
+      type: "html",
+      html: "Watch what happens when you see it in action.",
+    },
+  },
+
+      // Slide 11: Secret sauce image (teaser, no explanation yet)
   {
     title: "Image Interlude",
     media: {
@@ -101,14 +111,6 @@ export const demoSlides: Slide[] = [
       alt: "Knowledge base preview",
     },
     hideTitle: true,
-  },
-  // NEW SLIDE 11: Teaser frame
-  {
-    title: "THE SECRET? IT'S NOT THE TOOLS.",
-    body: {
-      type: "html",
-      html: "Watch what happens when you see it in action.",
-    },
   },
   
   
