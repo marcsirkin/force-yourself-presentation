@@ -60,13 +60,49 @@ export const demoSlides: Slide[] = [
     },
   },
      {
-    title: "AI OUTPERFORMED ME",
+    title: "AI BEAT ME",
     body: {
       type: "html",
       html: "I wasn't mad. I was thrilled.",
     },
   },
-
+    {
+    title: "AI ISN'T TAKING JOBS",
+    body: {
+      type: "html",
+      html: "It's taking bad habits.",
+    },
+  },
+   {
+    title: "REPLACE THE PLAYBOOK",
+    body: {
+      type: "html",
+      html: "Build a factory: SPOT → BUILD → TEST → SCALE",
+    },
+  },
+    {
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/martech-map-marketing-technology-landscape-1456.jpg",
+      alt: "SPOT BUILD TEST SCALE DIAGRAM",
+    },
+    hideTitle: true,
+  },
+    {
+    title: "FEAR. EGO. APPROVAL",
+    body: {
+      type: "html",
+      html: "The only way to get good at this is to start.",
+    },
+  },
+   {
+    title: "PLAYBOOKS END",
+    body: {
+      type: "html",
+      html: "Experiments Compound.",
+    },
+  },
   {
     title: "Cinematic Break",
     media: {
