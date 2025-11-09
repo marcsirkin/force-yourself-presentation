@@ -1,6 +1,23 @@
-# Force Yourself Presentation Scaffold
+# Force Yourself Presentation
 
-This project is a scrollytelling presentation built with Next.js, Tailwind CSS, Lenis, and Framer Motion.
+This project is a scrollytelling presentation built with Next.js, Tailwind CSS, Lenis, and Framer Motion. It was built the weekend of November 8/9 using ChatGPT Codex and Claude as an example of both vibe coding and vibe marketing.
+
+Live presentation site: https://force-yourself-presentation-84h8136rx-marc-sirkins-projects.vercel.app/
+
+## Custom GPTs (AI Factory floor)
+1. Copyline Crafter v2 https://chatgpt.com/g/g-xjqgObyMk-copyline-crafter-v2
+2. Company Analyzer https://chatgpt.com/g/g-681ce1e585188191a1e6c15f80ddc6be-company-analyzer
+3. Sales Call Analyzer https://chatgpt.com/g/g-68cb0d44c3488191a928f56551bd6984-sales-call-analyzer
+4. Third Door Media Image GPT https://chatgpt.com/g/g-689ca3cbc84081918964144812318306-tdm-image-builder
+5. Down by the River motivation https://chatgpt.com/g/g-qonWiNcwy-down-by-the-river-motivation-v2
+6. World-building https://chatgpt.com/g/g-68d96de857e08191ba68807584b65619-writing-tools-ultimate-world-builder
+7. Prompt Architect https://chatgpt.com/g/g-68010c3edbe8819187e67c551621c756-prompt-architect
+
+## About the creator
+3. Playbook Broken podcast https://marcsirkin.substack.com/
+4. Marc Sirkin Consulting https://www.sirkin.com/
+5. Marc Sirkin LinkedIn https://www.linkedin.com/in/marcsirkin/
+6. Scott Brinker's Martech Map https://chiefmartec.com/2025/05/2025-marketing-technology-landscape-supergraphic-100x-growth-since-2011-but-now-with-ai/
 
 ## Local Development
 
