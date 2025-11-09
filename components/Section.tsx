@@ -23,6 +23,12 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
   const hasMedia = Boolean(media);
   const showHeading = !hideTitle;
 
+}
+
+const Section = forwardRef<HTMLElement, SectionProps>(function Section(
+  { title, children, dark = true, index }: SectionProps,
+  ref,
+) {
   return (
     <motion.section
       ref={ref}
@@ -93,6 +99,18 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
         ) : children ? (
           <motion.div
             className={`mx-auto mt-10 max-w-3xl text-center text-xs font-semibold uppercase tracking-[0.26em] sm:text-sm sm:tracking-[0.3em] md:text-base md:tracking-[0.34em] ${
+      <motion.div className="relative z-10 max-w-5xl text-center" variants={staggerChildren}>
+        <div className="overflow-hidden">
+          <motion.h2
+            className="font-black uppercase tracking-[0.14em] text-[clamp(3.5rem,9vw,8rem)] leading-[0.95] drop-shadow-[0_16px_32px_rgba(0,0,0,0.38)]"
+            variants={maskReveal}
+          >
+            <GlitchText>{title}</GlitchText>
+          </motion.h2>
+        </div>
+        {children ? (
+          <motion.div
+            className={`mx-auto mt-10 max-w-3xl text-xs font-semibold uppercase tracking-[0.26em] sm:text-sm sm:tracking-[0.3em] md:text-base md:tracking-[0.34em] ${
               dark ? "text-white/75" : "text-black/70"
             } [&_a]:underline [&_a]:underline-offset-[0.45em] [&_a]:decoration-2 [&_a]:transition-colors ${
               dark

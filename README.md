@@ -67,6 +67,7 @@ want the slide to showcase only the image or video:
 ```
 
 Media slides are responsive by default—the wrapper keeps a 16:9 ratio, rounds the corners, and scales smoothly on any viewport.
+The default slides live in [`lib/slides.ts`](./lib/slides.ts). Update the `demoSlides` array or add new entries there—each object maps directly to a rendered `Section`.
 
 ## GitHub Workflow
 
