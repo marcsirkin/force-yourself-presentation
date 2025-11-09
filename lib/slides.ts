@@ -170,10 +170,10 @@ export const demoSlides: Slide[] = [
   
   // Slide 18: Now reveal the secret
   {
-    title: "THE SECRET: KNOWLEDGE BASE, NOT JUST PROMPTS",
+    title: "THE SECRET!",
     body: {
       type: "html",
-      html: "These files make every GPT 10x smarter.",
+      html: "Key files that make outputs 10x better.",
     },
   },
   
