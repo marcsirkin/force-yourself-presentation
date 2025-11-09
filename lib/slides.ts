@@ -47,8 +47,8 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "https://yavuzceliker.github.io/sample-images/image-1021.jpg",
-      alt: "Glowing neon skyline reflected in calm water",
+      src: "public/images/martech-map-marketing-technology-landscape-1456.jpg",
+      alt: "Scott Brinkers 2025 Marketing Map",
     },
     hideTitle: true,
   },
