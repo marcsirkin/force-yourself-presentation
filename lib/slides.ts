@@ -186,6 +186,14 @@ export const demoSlides: Slide[] = [
     html: "Build these once. Use them everywhere.<br><br><strong>1. ICP Definition</strong> – Who you serve, what they need<br><strong>2. Company Description</strong> – Your positioning, voice, offers<br><strong>3. Process Docs</strong> – How you do the thing, with examples",
   },
 },
+
+  {
+  title: "DON'T",
+  body: {
+    type: "html",
+    html: "Don't use marketing speak. Don't convince yourself, everyone knows the ICP. Do the work. ",
+  },
+},
   
   // Slide 19: Mic drop
   {
