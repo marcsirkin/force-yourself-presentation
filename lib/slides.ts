@@ -158,13 +158,15 @@ export const demoSlides: Slide[] = [
     hideTitle: true,
   },
 
-  // Slide 18: Now reveal the secret
+  // Replaced secret with instructions
   {
-    title: "THE SECRET!",
-    body: {
-      type: "html",
-      html: "Key files that make outputs 10x better.",
+    title: "Image Interlude",
+    media: {
+      kind: "image",
+      src: "/images/instructions.jpg",
+      alt: "GPT instructions",
     },
+    hideTitle: true,
   },
   
         // Slide 11: Secret sauce image (teaser, no explanation yet)
