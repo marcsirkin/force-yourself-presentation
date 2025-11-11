@@ -182,7 +182,7 @@ export const demoSlides: Slide[] = [
   
 
 {
-  title: "3 KEY FILES",
+  title: "THE THREE FILES",
   body: {
     type: "html",
     html: "Build these once. Use them everywhere.<br><br><strong>1. ICP Definition</strong> – Who you serve, what they need<br><strong>2. Company Description</strong> – Your positioning, voice, offers<br><strong>3. Process Docs</strong> – How you do the thing, with examples",
