@@ -1,10 +1,10 @@
 # Force Yourself to Experiment: Because Your Playbook Is Broken
 
-A scrollytelling presentation built with Next.js, Tailwind CSS, Lenis (smooth scrolling), and Framer Motion (animations). Optimized for live presentation delivery with keyboard navigation and full-screen media support.
+A "scrollytelling" presentation designed for **[Digital Cut](https://digitalcut.co/)** virtual event planned for February 2026. This presentation/app/website is built with Next.js, Tailwind CSS, Lenis (smooth scrolling), and Framer Motion (animations). Optimized for live presentation delivery with keyboard navigation and full-screen media support.
 
-Built the weekend of November 8/9, 2025, using ChatGPT and Claude as an example of both **vibe coding** and **vibe marketing**.
+Built November 8/9, 2025, using ChatGPT and Claude as an example of both **vibe coding** and **vibe marketing**.
 
-**[→ View Live Presentation](https://force-yourself-presentation-git-main-marc-sirkins-projects.vercel.app/)**
+**[→ View Live Presentation/App/Website](https://force-yourself-presentation-git-main-marc-sirkins-projects.vercel.app/)**
 
 ---
 
@@ -21,7 +21,9 @@ I built the technical aspects (vibe coding!) in about 5 hours using Codex and Cl
 
 If you're watching the presentation, I reveal this at the end. If you're reading the repo first, now you know: the medium IS the message.
 
-It's also accurate to say that I used the concept of vibe marketing to help me refine the talking points, hone in on concepts and act like a coach and advisor. I do hope you enjoy the talk!
+It's also accurate to say that I used the concept of vibe marketing to help me refine the talking points, hone in on concepts, and act like a coach and advisor. I hope you enjoy the talk!
+
+I'm available for corporate workshops, keynotes, and advisory work. See my contact info below.
 
 ---
 
@@ -46,7 +48,7 @@ Each one follows the **SPOT → BUILD → TEST → SCALE** loop demonstrated in 
 - **[Playbook Broken Podcast](https://marcsirkin.substack.com/)** – Real conversations about AI and marketing, no corporate theater
 - **[Marc Sirkin Consulting](https://www.sirkin.com/)** – Advisory and execution for AI-driven marketing and growth
 - **[Marc on LinkedIn](https://www.linkedin.com/in/marcsirkin/)** – Connect for speaking, workshops, and collaboration
-- **[Scott Brinker's Martech Map](https://chiefmartec.com/2025/05/2025-marketing-technology-landscape-supergraphic-100x-growth-since-2011-but-now-with-ai/)** – The landscape graphic used in Slide 3. Scott's devotion to tiny logos is legendary. I even made a Sora2 video about it: https://sora.chatgpt.com/p/s_68e1631c7ec08191ab71e25c85b9876e
+- **[Scott Brinker's Martech Map](https://chiefmartec.com/2025/05/2025-marketing-technology-landscape-supergraphic-100x-growth-since-2011-but-now-with-ai/)** – The landscape graphic used in Slide 3. Scott's devotion to tiny logos is legendary. I even made a [Sora2](https://sora.chatgpt.com/p/s_68e1631c7ec08191ab71e25c85b9876e) video about it: 
 
 ---
 
