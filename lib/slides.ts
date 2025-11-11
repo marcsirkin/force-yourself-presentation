@@ -163,7 +163,7 @@ export const demoSlides: Slide[] = [
     title: "Image Interlude",
     media: {
       kind: "image",
-      src: "/images/instructions.jpg",
+      src: "/images/instructions.png",
       alt: "GPT instructions",
     },
     hideTitle: true,
